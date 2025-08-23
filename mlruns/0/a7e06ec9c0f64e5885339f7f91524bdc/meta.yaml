@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/divya/OneDrive/Desktop/ml/mlruns/0/a7e06ec9c0f64e5885339f7f91524bdc/artifacts
+end_time: 1755974557404
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a7e06ec9c0f64e5885339f7f91524bdc
+run_name: burly-smelt-720
+run_uuid: a7e06ec9c0f64e5885339f7f91524bdc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755974541134
+status: 3
+tags: []
+user_id: root
