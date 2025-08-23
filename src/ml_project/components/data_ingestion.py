@@ -21,7 +21,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             # Read data from a MySQL database or any other source
-            df = read_sql_data()
+            df = pd.read_csv(os.path.join("notebook\main_data\data.csv") ) # Replace with read_sql_data() if needed
             logging.info("Reading data from MySQL database")
 
             # Create artifacts folder if not exists

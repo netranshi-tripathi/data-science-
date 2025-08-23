@@ -5,6 +5,8 @@ from src.ml_project.logger import logging
 import pandas as pd
 from dotenv import load_dotenv
 import pymysql
+import pickle
+import numpy as np
 
 # Load environment variables from .env file
 load_dotenv()  
@@ -33,3 +35,12 @@ def read_sql_data():
     
     except Exception as ex:
         raise CustomException(ex, sys)
+    
+def save_object(file_path, obj):
+    try:
+        dir_path = os.path.dirname(file_path)
+        os.makedirs(dir_path, exist_ok=True)
+        with open(file_path, "wb") as f:
+            pickle.dump(obj, f)
+    except Exception as e:
+        raise CustomException(e, sys) from e
